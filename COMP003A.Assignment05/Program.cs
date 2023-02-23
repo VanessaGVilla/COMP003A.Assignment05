@@ -10,19 +10,30 @@ namespace COMP003A.Assignment05
     {
         static void Main(string[] args)
         {
-            
+
+            //  PrintSeparator("Triangle");
+            //IsoscelesTriangleBuilder('/' , 10);
+
+            //Console.WriteLIne(AgeCalculator
+
+        }
+        static void PrintSeparator()
+        {
+            Console.WriteLine("".PadRight(50, '*'));
         }
 
-
-
-
-
-        /// Builds an isosceles triangle using the given character and size
-        /// </summary>
-        /// <param name="inputCharacter">The character to use for building the triangle</param>
-        /// <param name="size">The size of the triangle</param>
-        static void IsoscelesTriangleBuilder(char inputCharacter, int size)
+        static void PrintSeparator(string title)
         {
+            PrintSeparator();
+            Console.WriteLine($"\t{title} Section.");
+            PrintSeparator();
+
+        }
+
+        static void IsoscelesTriangleBuilder(char inputCharacter, int size)
+
+        {
+            string output = "";
             // increasing triangle
             for (int i = 0; i < size; i++)
             {
@@ -34,7 +45,7 @@ namespace COMP003A.Assignment05
             for (int i = size - 1; i > 0; i--)
 
             {
-                output = output.Substring(o, i);
+                output = output.Substring(0, i);
                 Console.WriteLine(output);
             }
         }
