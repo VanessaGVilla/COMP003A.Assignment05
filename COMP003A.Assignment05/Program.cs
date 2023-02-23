@@ -11,8 +11,8 @@ namespace COMP003A.Assignment05
         static void Main(string[] args)
         {
 
-            //  PrintSeparator("Triangle");
-            //IsoscelesTriangleBuilder('/' , 10);
+         PrintSeparator("Triangle");
+         IsoscelesTriangleBuilder('/' , 10);
 
             //Console.WriteLIne(AgeCalculator
 
